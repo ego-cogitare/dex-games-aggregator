@@ -1,0 +1,11 @@
+.view {
+  display: none;
+}
+
+#errorsContainer {
+  display: none;
+}
+
+.display_none {
+  display: none;
+}

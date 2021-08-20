@@ -1,0 +1,1612 @@
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 28 Connection timed o  
+  ut after 10000 milliseconds                                                  
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 28 Connection timed o  
+  ut after 10001 milliseconds                                                  
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 28 Connection timed o  
+  ut after 10001 milliseconds                                                  
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 28 Connection timed o  
+  ut after 10000 milliseconds                                                  
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 28 Resolving timed ou  
+  t after 10081 milliseconds                                                   
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 28 Resolving timed ou  
+  t after 11086 milliseconds                                                   
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 28 Operation timed ou  
+  t after 0 milliseconds with 0 out of 0 bytes received                        
+                                                                               
+
+
+In PDOConnection.php line 47:
+                                             
+  SQLSTATE[HY000] [2002] Connection refused  
+                                             
+
+In PDOConnection.php line 43:
+                                             
+  SQLSTATE[HY000] [2002] Connection refused  
+                                             
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In CryptopiaArbitrage.php line 129:
+                                             
+  Parse error: syntax error, unexpected ']'  
+                                             
+
+
+In CryptopiaArbitrage.php line 129:
+                                             
+  Parse error: syntax error, unexpected ']'  
+                                             
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In Exchange.php line 783:
+                                                                               
+  livecoin GET https://api.livecoin.net/exchange/ticker 502 not accessible fr  
+  om this location at the moment                                               
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+
+
+In livecoin.php line 593:
+                                                                               
+  livecoin {"success":false,"errorCode":503,"errorMessage":"Service is under   
+  maintenance"}                                                                
+                                                                               
+

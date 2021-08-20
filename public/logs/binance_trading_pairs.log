@@ -1,0 +1,28 @@
+
+In PDOConnection.php line 47:
+                                             
+  SQLSTATE[HY000] [2002] Connection refused  
+                                             
+
+In PDOConnection.php line 43:
+                                             
+  SQLSTATE[HY000] [2002] Connection refused  
+                                             
+
+
+In PDOConnection.php line 47:
+                                             
+  SQLSTATE[HY000] [2002] Connection refused  
+                                             
+
+In PDOConnection.php line 43:
+                                             
+  SQLSTATE[HY000] [2002] Connection refused  
+                                             
+
+
+In CryptopiaArbitrage.php line 129:
+                                             
+  Parse error: syntax error, unexpected ']'  
+                                             
+
