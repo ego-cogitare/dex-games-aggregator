@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Staff @stop
+@section('title') Balances @stop
 
 @section('left-menu')
     @include('shared.left-menu.index')
@@ -16,24 +16,41 @@
                     <th>Account</th>
                     <th>Currency</th>
                     <th>Amount</th>
+                    <th>Est. USD</th>
                 </tr>
                 </thead>
                 <tbody>
                     @foreach ($balances as $item)
                     <tr>
                         <td width="40">{{$loop->iteration}}</td>
-                        <td><a href="?account={{$item['account']}}">{{$item['account']}}</a></td>
-                        <td>{{$item['currency']}}</td>
+                        <td>
+                            <a href="?account={{$item['account']}}">{{$item['account']}}</a>
+                        </td>
+                        <td>
+                            <a href="?currency={{$item['currency']}}">{{$item['currency']}}</a>
+                        </td>
                         <td>{{$item['amount']}}</td>
+                        <td>${{ sprintf('%.2f', $item['estUSD']) }}</td>
                     </tr>
                     @endforeach
                     <tr>
-                        <td colspan="4"><b>Total:</b></td>
+                    <tr>
+                        <td colspan="5">
+                            <b>Total</b>
+                        </td>
                     </tr>
                     @foreach ($total as $currency => $amount)
                         <tr>
-                            <td>{{$loop->iteration}}</td>
-                            <td colspan="3"><b>{{$amount}}</b> {{$currency}}</td>
+                            <td>
+                                <a href="?currency={{ $currency }}">{{ $currency }}</a>
+                            </td>
+                            <td colspan="2">&nbsp;</td>
+                            <td>
+                                <b>{{ $amount }}</b>
+                            </td>
+                            <td>
+                                <b>${{ sprintf('%.2f', $amount * ($prices[$currency] ?? 0)) }}</b>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>

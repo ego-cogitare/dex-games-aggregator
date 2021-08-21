@@ -50,7 +50,7 @@ class AtomicHub
         ]);
         $history = $this->call('history', [], [], 'POST', $payload, ['content-type: application/json']);
 
-        return $history->calendar->{$date} ?? [];
+        return $history->calendar->{$date} ?? new stdClass();
     }
 
     /**

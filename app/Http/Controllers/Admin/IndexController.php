@@ -33,6 +33,11 @@ class IndexController extends BaseController
         "wmptw.wam",
     ];
 
+    private $prices = [
+        'WAX' => 0.1824,
+        'TLM' => 0.2794,
+    ];
+
     /**
      * @return Factory|View
      * @throws Exception
@@ -40,10 +45,11 @@ class IndexController extends BaseController
     public function history()
     {
         $accounts = request()->input('account', $this->accounts);
+        $date = request()->input('date', date('Y-m-d'));
         if (is_string($accounts)) {
             $accounts = [$accounts];
         }
-        $history = $this->atomicHub->fetchHistory(date('Y-m-d'), $accounts);
+        $history = $this->atomicHub->fetchHistory($date, $accounts);
 
         return view('admin.history', [
             'history' => $history,
@@ -118,16 +124,21 @@ class IndexController extends BaseController
         if (is_string($accounts)) {
             $accounts = [$accounts];
         }
+        $currency = request()->input('currency');
         $balances = [];
         $total = [];
         foreach ($accounts as $account) {
             $json = file_get_contents('https://lightapi.eosamsterdam.net/api/balances/wax/' . $account);
             $data = json_decode($json);
             foreach ($data->balances as $item) {
+                if ($currency !== null && $item->currency !== $currency) {
+                    continue;
+                }
                 $balances[] = [
                     'account' => $account,
                     'currency' => $item->currency,
                     'amount' => (float)$item->amount,
+                    'estUSD' => $item->amount * ($this->prices[$item->currency] ?? 0),
                 ];
                 if (empty($total[$item->currency])) {
                     $total[$item->currency] = 0;
@@ -142,6 +153,7 @@ class IndexController extends BaseController
         return view('admin.balances', [
             'balances' => $balances,
             'total' => $total,
+            'prices' => $this->prices,
         ]);
     }
 }

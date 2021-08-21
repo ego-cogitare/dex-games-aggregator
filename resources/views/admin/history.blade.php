@@ -17,7 +17,7 @@
                     <th>Name</th>
                     <th>Account</th>
                     <th>Price, WAX</th>
-                    <th>Time</th>
+                    <th>Sold At</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -25,12 +25,12 @@
                     <tr>
                         <td width="40">{{ $loop->iteration }}</td>
                         <td width="50">
-                            <img src="/img/{{$item->collectionName}}/{{$item->staff}}.png" width="40" alt="{{$item->staff}}" title="{{$item->staff}}" />
+                            <img src="/img/{{$item->collectionName}}/{{$item->staff}}.png" width="30" alt="{{$item->staff}}" title="{{$item->staff}}" />
                         </td>
                         <td>{{$item->staff}}</td>
                         <td><a href="?account={{$item->account}}">{{$item->account}}</a></td>
                         <td>{{$item->price}}</td>
-                        <td>{{\Carbon\Carbon::createFromTimestampMs($item->createdAt)->format('H:i:s')}}</td>
+                        <td>{{\Carbon\Carbon::createFromTimestampMs($item->updatedAt)->format('H:i:s')}}</td>
                     </tr>
                     @endforeach
                     <tr>
