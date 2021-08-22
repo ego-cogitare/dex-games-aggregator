@@ -21,7 +21,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                    @foreach ($history->details as $item)
+                    @foreach ($history['details'] as $item)
                     <tr>
                         <td width="40">{{ $loop->iteration }}</td>
                         <td width="50">
@@ -34,7 +34,7 @@
                     </tr>
                     @endforeach
                     <tr>
-                        <td colspan="6"><b>Total:</b> <b>{{$history->amount}}</b> items for <b>{{$history->wax}} WAX</b></td>
+                        <td colspan="6"><b>Total:</b> <b>{{$history['amount']}}</b> items for <b>{{$history['wax']}} WAX</b></td>
                     </tr>
                 </tbody>
             </table>

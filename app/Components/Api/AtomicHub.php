@@ -31,9 +31,9 @@ class AtomicHub
     /**
      * @param string $date
      * @param array $accounts
-     * @return stdClass
+     * @return array
      */
-    public function fetchHistory(string $date = '', array $accounts = []): stdClass {
+    public function fetchHistory(string $date = '', array $accounts = []): array {
         $payload = json_encode([
             'accounts' => $accounts,
             'collectionName' => 'alienshipsio',
@@ -50,7 +50,11 @@ class AtomicHub
         ]);
         $history = $this->call('history', [], [], 'POST', $payload, ['content-type: application/json']);
 
-        return $history->calendar->{$date} ?? new stdClass();
+        return empty($history->calendar->{$date}) ? [
+            'details' => [],
+            'amount' => 0,
+            'wax' => 0,
+        ] : (array)$history->calendar->{$date};
     }
 
     /**
