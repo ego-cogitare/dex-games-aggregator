@@ -26,5 +26,6 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
         Route::get('/pending', 'IndexController@pending');
         Route::get('/staff', 'IndexController@staff');
         Route::get('/balances', 'IndexController@balances');
+        Route::get('/account/{account}/atomichub', 'IndexController@atomichub');
     });
 });

@@ -27,6 +27,62 @@
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-exchange"></i>
+                    <span>Accounts</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    @foreach ($accounts as $account)
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-circle-thin"></i> <span>{{$account}}</span>
+                        </a>
+                        <ul>
+                            <li class="_treeview">
+                                <a href="/admin/account/{{$account}}/atomichub">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Atomic Hub</span>
+                                </a>
+                            </li>
+                            <li class="_treeview">
+                                <a href="/admin/history?account={{$account}}">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Today Sales</span>
+                                </a>
+                            </li>
+                            <li class="_treeview">
+                                <a href="/admin/history?account={{$account}}">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Today Sales</span>
+                                </a>
+                            </li>
+                            <li class="_treeview">
+                                <a href="/admin/pending?account={{$account}}">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Pending Orders</span>
+                                </a>
+                            </li>
+                            <li class="_treeview">
+                                <a href="/admin/staff?account={{$account}}">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Staff</span>
+                                </a>
+                            </li>
+                            <li class="_treeview">
+                                <a href="/admin/balances?account={{$account}}">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Balances</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    @endforeach
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-exchange"></i>
                     <span>Games</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>

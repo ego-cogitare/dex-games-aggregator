@@ -118,4 +118,15 @@ class AtomicHub
 
         return (array)$staff->message;
     }
+
+    /**
+     * @param string $token
+     * @return mixed
+     */
+    public function open(string $token = '') {
+        $payload = json_encode([
+            'token' => $token,
+        ]);
+        return $this->call('open', [], [], 'POST', $payload, ['content-type: application/json']);
+    }
 }

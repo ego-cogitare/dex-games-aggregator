@@ -3,11 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 
-use Carbon\Carbon;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\View\View;
-use Illuminate\Support\Facades\DB;
 
 /**
  * Class IndexController
@@ -15,24 +13,6 @@ use Illuminate\Support\Facades\DB;
  */
 class IndexController extends BaseController
 {
-    /**
-     * @var null|string[]
-     */
-    private $accounts = [
-        "qdyek.wam",
-        "jwpeg.wam",
-        "jhque.wam",
-        "zc4ey.wam",
-        "mjqfm.wam",
-        "z4jfo.wam",
-        "11nfo.wam",
-        "tjnvq.wam",
-        "4rovq.wam",
-        "z1jfu.wam",
-
-        "wmptw.wam",
-    ];
-
     private $prices = [
         'WAX' => 0.1824,
         'TLM' => 0.2794,
@@ -44,7 +24,7 @@ class IndexController extends BaseController
      */
     public function history()
     {
-        $accounts = request()->input('account', $this->accounts);
+        $accounts = request()->input('account', array_keys($this->accounts));
         $date = request()->input('date', date('Y-m-d'));
         if (is_string($accounts)) {
             $accounts = [$accounts];
@@ -62,7 +42,7 @@ class IndexController extends BaseController
      */
     public function pending()
     {
-        $accounts = request()->input('account', $this->accounts);
+        $accounts = request()->input('account', array_keys($this->accounts));
         if (is_string($accounts)) {
             $accounts = [$accounts];
         }
@@ -79,7 +59,7 @@ class IndexController extends BaseController
      */
     public function staff()
     {
-        $accounts = request()->input('account', $this->accounts);
+        $accounts = request()->input('account', array_keys($this->accounts));
         if (is_string($accounts)) {
             $accounts = [$accounts];
         }
@@ -120,7 +100,7 @@ class IndexController extends BaseController
      */
     public function balances()
     {
-        $accounts = request()->input('account', $this->accounts);
+        $accounts = request()->input('account', array_keys($this->accounts));
         if (is_string($accounts)) {
             $accounts = [$accounts];
         }
@@ -155,5 +135,14 @@ class IndexController extends BaseController
             'total' => $total,
             'prices' => $this->prices,
         ]);
+    }
+
+    /**
+     * @param string $account
+     */
+    public function atomichub(string $account = '')
+    {
+        $this->atomicHub->open($this->accounts[$account]);
+        return view('admin.atomichub');
     }
 }
