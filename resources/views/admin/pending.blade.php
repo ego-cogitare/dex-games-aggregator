@@ -30,7 +30,7 @@
                         <td>{{$item->staff}}</td>
                         <td><a href="?account={{$item->account}}">{{$item->account}}</a></td>
                         <td>{{$item->price}}</td>
-                        <td>{{\Carbon\Carbon::createFromTimestampMs($item->updatedAt)->format('H:i:s')}}</td>
+                        <td>{{\Carbon\Carbon::createFromTimestampMs($item->createdAt)->format('d.m.Y H:i:s')}}</td>
                     </tr>
                     @endforeach
                     <tr>

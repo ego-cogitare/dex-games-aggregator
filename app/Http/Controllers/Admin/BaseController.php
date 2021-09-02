@@ -21,9 +21,14 @@ class BaseController extends Controller
     protected $atomicHub = null;
 
     /**
-     * @var null|string[]
+     * @var null|Accounts[]
      */
     protected $accounts = [];
+
+    /**
+     * @var null|Accounts
+     */
+    protected $tradingAccount = null;
 
     /**
      * MarketController constructor.
@@ -37,10 +42,14 @@ class BaseController extends Controller
             if ($account->is_active === false) {
                 continue;
             }
-            $this->accounts[$account->account] = $account->wax_session_token;
+            if ($account->is_trading_account) {
+                $this->tradingAccount = $account;
+            }
+            $this->accounts[$account->account] = $account;
         }
 
         /** Share global view market variable */
         View::share('accounts', array_keys($this->accounts));
+        View::share('tradingAccount', $this->tradingAccount);
     }
 }

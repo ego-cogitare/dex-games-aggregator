@@ -13,9 +13,12 @@ use Illuminate\View\View;
  */
 class IndexController extends BaseController
 {
+    /**
+     * @var float[]
+     */
     private $prices = [
-        'WAX' => 0.1824,
-        'TLM' => 0.2794,
+        'WAX' => 0.3442,
+        'TLM' => 0.3448,
     ];
 
     /**
@@ -24,12 +27,9 @@ class IndexController extends BaseController
      */
     public function history()
     {
-        $accounts = request()->input('account', array_keys($this->accounts));
+        $account = request()->input('account', $this->tradingAccount->account);
         $date = request()->input('date', date('Y-m-d'));
-        if (is_string($accounts)) {
-            $accounts = [$accounts];
-        }
-        $history = $this->atomicHub->fetchHistory($date, $accounts);
+        $history = $this->atomicHub->fetchHistory($date, [$account]);
 
         return view('admin.history', [
             'history' => $history,
@@ -42,11 +42,8 @@ class IndexController extends BaseController
      */
     public function pending()
     {
-        $accounts = request()->input('account', array_keys($this->accounts));
-        if (is_string($accounts)) {
-            $accounts = [$accounts];
-        }
-        $data = $this->atomicHub->fetchPendingOrders($accounts);
+        $account = request()->input('account', $this->tradingAccount->account);
+        $data = $this->atomicHub->fetchPendingOrders([$account]);
 
         return view('admin.pending', [
             'data' => $data,
