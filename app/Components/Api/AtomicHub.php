@@ -20,6 +20,24 @@ class AtomicHub
     private $apiUrl = null;
 
     /**
+     * @var string[][]
+     */
+    private $search = [
+        [
+            'schema_name' => 'addons',
+            'match' => 'AUTOPILOT P1',
+        ],
+        [
+            'schema_name' => 'addons',
+            'match' => 'AUTOPILOT P3',
+        ],
+        [
+            'schema_name' => 'addons',
+            'match' => 'AUTOPILOT P4',
+        ],
+    ];
+
+    /**
      * AtomicHub constructor.
      * @param string $apiUrl
      * @param string $auth
@@ -37,16 +55,7 @@ class AtomicHub
         $payload = json_encode([
             'accounts' => $accounts,
             'collectionName' => 'alienshipsio',
-            'search' => [
-                [
-                    'schema_name' => 'addons',
-                    'match' => 'AUTOPILOT P1',
-                ],
-                [
-                    'schema_name' => 'addons',
-                    'match' => 'AUTOPILOT P3',
-                ],
-            ],
+            'search' => $this->search,
         ]);
         $history = $this->call('history', [], [], 'POST', $payload, ['content-type: application/json']);
 
@@ -65,16 +74,7 @@ class AtomicHub
         $payload = json_encode([
             'accounts' => $accounts,
             'collectionName' => 'alienshipsio',
-            'search' => [
-                [
-                    'schema_name' => 'addons',
-                    'match' => 'AUTOPILOT P1',
-                ],
-                [
-                    'schema_name' => 'addons',
-                    'match' => 'AUTOPILOT P3',
-                ],
-            ],
+            'search' => $this->search,
         ]);
         $orders = $this->call('pending', [], [], 'POST', $payload, ['content-type: application/json']);
         $result = [];
