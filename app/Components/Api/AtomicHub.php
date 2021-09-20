@@ -111,7 +111,7 @@ class AtomicHub
                 'match' => $match,
                 'collection_name' => $collectionName,
                 'page' => 1,
-                'limit' => 100,
+                'limit' => 500,
             ],
         ]);
         $staff = $this->call('staff', [], [], 'POST', $payload, ['content-type: application/json']);
