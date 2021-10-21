@@ -13,14 +13,29 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>Img</th>
-                    <th>Name</th>
                     <th>Account</th>
-                    <th>Amount</th>
+                    <th>Total</th>
+                    <th>Avg</th>
+                    <th>Mines Count</th>
                 </tr>
                 </thead>
                 <tbody>
-
+                @foreach ($earnings as $item)
+                    <tr>
+                        <td width="40">{{$loop->iteration}}</td>
+                        <td>
+                            <a href="?account={{$item['account']}}">{{$item['account']}}</a>
+                        </td>
+                        <td>{{$item['total']}}</td>
+                        <td>{{$item['avg']}}</td>
+                        <td>{{$item['count']}}</td>
+                    </tr>
+                @endforeach
+                <tr>
+                    <td colspan="2"><b>Total</b></td>
+                    <td colspan="2"><b>{{$total}}</b></td>
+                    <td><b>{{$count}}</b></td>
+                </tr>
                 </tbody>
             </table>
         </div>

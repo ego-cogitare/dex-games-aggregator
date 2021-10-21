@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Admin;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\View\View;
+use App\Models\AlienworldsMining;
 
 /**
  * Class GameController
@@ -19,23 +20,28 @@ class GameController extends BaseController
      */
     public function alienworlds()
     {
-        $from = request()->input('from', date('Y-m-d'));
-        $to = request()->input('to', date('Y-m-d'));
+        $date = request()->input('date', date('Y-m-d'));
         $accounts = request()->input('account', array_keys($this->accounts));
         if (is_string($accounts)) {
             $accounts = [$accounts];
         }
-        $data = $this->atomicHub->earnings($accounts, $from, $to);
-        dd($data);
 
-        usort($balances, function($a, $b) {
-            return $a['amount'] < $b['amount'] ? 1 : -1;
-        });
+        $earnings = AlienworldsMining::where('date', $date)
+            ->whereIn('account', $accounts)
+            ->orderBy('total', 'desc')
+            ->get();
+
+        $total = 0;
+        $count = 0;
+        foreach ($earnings as $earning) {
+            $total += $earning->total;
+            $count += $earning->count;
+        }
 
         return view('admin.game.alienworlds', [
-//            'balances' => $balances,
-//            'total' => $total,
-//            'prices' => $this->prices,
+            'earnings' => $earnings,
+            'total' => $total,
+            'count' => $count,
         ]);
     }
 }
