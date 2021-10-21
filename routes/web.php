@@ -27,5 +27,6 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
         Route::get('/staff', 'IndexController@staff');
         Route::get('/balances', 'IndexController@balances');
         Route::get('/account/{account}/atomichub', 'IndexController@atomichub');
+        Route::get('/game/alienworlds', 'GameController@alienworlds');
     });
 });

@@ -120,6 +120,23 @@ class AtomicHub
     }
 
     /**
+     * @param array $accounts
+     * @param string $from
+     * @param string $to
+     * @return array
+     */
+    public function earnings(array $accounts = [], string $from, string $to = ''): array {
+        $payload = json_encode([
+            'accounts' => $accounts,
+            'from' => $from ?: date('Y-m-d'),
+            'to' => $to ?: date('Y-m-d'),
+        ]);
+        $earnings = $this->call('earnings', [], [], 'POST', $payload, ['content-type: application/json']);
+
+        return (array)$earnings;
+    }
+
+    /**
      * @param string $token
      * @return mixed
      */

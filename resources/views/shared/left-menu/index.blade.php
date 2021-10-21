@@ -90,6 +90,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li>
+                        <a href="/admin/game/alienworlds"><i class="fa fa-circle-o"></i> Alien Worlds</a>
                         <a href="/admin/game/alienships"><i class="fa fa-circle-o"></i> Alien Ships</a>
                     </li>
                 </ul>
