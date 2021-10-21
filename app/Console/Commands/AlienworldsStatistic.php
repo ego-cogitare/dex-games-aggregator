@@ -29,7 +29,7 @@ class AlienworldsStatistic extends AbstractCommand
     {
         $delay = $this->option('delay');
         $date = $this->option('date') ?: date('Y-m-d');
-        $accounts = Accounts::get();
+        $accounts = Accounts::where('is_active', 1)->get();
 
         while (true) {
             foreach ($accounts as $account) {
