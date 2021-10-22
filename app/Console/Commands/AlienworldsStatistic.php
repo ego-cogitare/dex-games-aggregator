@@ -28,10 +28,10 @@ class AlienworldsStatistic extends AbstractCommand
     public function handle(AtomicHub $atomicHub)
     {
         $delay = $this->option('delay');
-        $date = $this->option('date') ?: date('Y-m-d');
         $accounts = Accounts::where('is_active', 1)->get();
 
         while (true) {
+            $date = $this->option('date') ?: date('Y-m-d');
             foreach ($accounts as $account) {
                 $item = AlienworldsMining::whereRaw('date = ? AND account = ?', [$date, $account->account]);
                 $mines = $atomicHub->earnings([$account->account], $date, $date);
