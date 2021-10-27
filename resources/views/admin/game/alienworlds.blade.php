@@ -14,6 +14,7 @@
                 <tr>
                     <th>#</th>
                     <th>Account</th>
+                    <th>Land</th>
                     <th>Total</th>
                     <th>Avg</th>
                     <th>Mines</th>
