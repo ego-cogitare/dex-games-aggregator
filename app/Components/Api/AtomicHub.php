@@ -35,6 +35,10 @@ class AtomicHub
             'schema_name' => 'addons',
             'match' => 'AUTOPILOT P4',
         ],
+//        [
+//            'schema_name' => 'alienships',
+//            'match' => 'S : A1',
+//        ],
     ];
 
     /**

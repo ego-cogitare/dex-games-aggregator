@@ -40,13 +40,14 @@ class AlienworldsStatistic extends AbstractCommand
                     continue;
                 }
                 $data = $mines['message'][0];
-
+                $lastMine = $data->mines[0]->timestamp ?? null;
                 if ($item->count() > 0) {
                     $this->info('update existing record for ' . $account->account);
                     $item->update([
                         'total' => $data->total,
                         'avg' => $data->avg,
                         'count' => $data->count,
+                        'updated_at' => is_null($lastMine) ? null : \Carbon\Carbon::createFromTimeString($lastMine),
                     ]);
                 } else {
                     $this->info('add new record for ' . $account->account);
@@ -56,6 +57,7 @@ class AlienworldsStatistic extends AbstractCommand
                         'avg' => $data->avg,
                         'count' => $data->count,
                         'date' => $date,
+                        'updated_at' => is_null($lastMine) ? null : \Carbon\Carbon::createFromTimeString($lastMine),
                     ]);
                 }
 

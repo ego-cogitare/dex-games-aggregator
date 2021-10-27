@@ -20,6 +20,7 @@ class AlienworldsMining extends Model
         'avg',
         'count',
         'date',
+        'updated_at',
     ];
 
     /**

@@ -39,7 +39,8 @@ class GameController extends BaseController
             $count += $earning->count;
             $staked += (int)$earning->cpu_staked;
             $earning->last_mine =  $earning->updated_at ?: $earning->created_at;
-            $earning->time_left = \Carbon\Carbon::createFromTimeString($earning->last_mine)->diffForHumans();
+            $date = \Carbon\Carbon::createFromTimeString($earning->last_mine)->toDateTimeLocalString();
+            $earning->time_left = \Carbon\Carbon::createFromTimeString($date)->diffForHumans();
         }
 
         return view('admin.game.alienworlds', [
