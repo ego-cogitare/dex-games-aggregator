@@ -30,6 +30,9 @@
                         <td>
                             <a href="https://wax.bloks.io/account/{{$item['account']}}" target="_blank">{{$item['account']}}</a>
                         </td>
+                        <td>
+                            <a href="/admin/game/alienworlds/planet/{{$item['account']}}">< land ></a>
+                        </td>
                         <td>{{$item['total']}}</td>
                         <td>{{$item['avg']}}</td>
                         <td>{{$item['count']}}</td>
