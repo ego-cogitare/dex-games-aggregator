@@ -48,6 +48,7 @@
                     <tr>
                         <td><b>Total</b></td>
                         <td>&nbsp;</td>
+                        <td>&nbsp;</td>
                         <td><b>{{$total}}</b></td>
                         <td><b>{{sprintf('%.6f', $avg)}}</b></td>
                         <td><b>{{$count}}</b></td>
