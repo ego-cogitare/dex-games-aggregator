@@ -39,18 +39,20 @@
                         <td>{{sprintf('%.2f', $item['cpu_staked'])}}</td>
                     </tr>
                 @endforeach
-                <tr>
-                    <td><b>Total</b></td>
-                    <td>&nbsp;</td>
-                    <td><b>{{$total}}</b></td>
-                    <td><b>{{sprintf('%.6f', $avg)}}</b></td>
-                    <td><b>{{$count}}</b></td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td><b>{{$staked}}</b></td>
-                </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td><b>Total</b></td>
+                        <td>&nbsp;</td>
+                        <td><b>{{$total}}</b></td>
+                        <td><b>{{sprintf('%.6f', $avg)}}</b></td>
+                        <td><b>{{$count}}</b></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><b>{{$staked}}</b></td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
         <!-- /.box-body -->

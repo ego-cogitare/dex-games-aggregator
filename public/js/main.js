@@ -8,9 +8,10 @@ $(document).ready(function() {
     $('#data-table').DataTable({
         'paging'      : false,
         'lengthChange': false,
-        'searching'   : false,
+        'searching'   : true,
         'ordering'    : true,
         'info'        : false,
-        'autoWidth'   : false
+        'autoWidth'   : false,
+        "order": []
     });
 });
