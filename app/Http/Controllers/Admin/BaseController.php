@@ -37,7 +37,7 @@ class BaseController extends Controller
     public function __construct(AtomicHub $atomicHub)
     {
         $this->atomicHub = $atomicHub;
-        $accounts = Accounts::get();
+        $accounts = Accounts::where('is_active', 1)->get();
         foreach ($accounts as $account) {
             if ($account->is_active === false) {
                 continue;

@@ -17,8 +17,8 @@ class IndexController extends BaseController
      * @var float[]
      */
     private $prices = [
-        'WAX' => 0.3442,
-        'TLM' => 0.3448,
+        'WAX' => 0.206650,
+        'TLM' => 0.317909,
     ];
 
     /**
@@ -27,6 +27,10 @@ class IndexController extends BaseController
      */
     public function history()
     {
+        if (empty($this->tradingAccount)) {
+            request()->session()->flash('error', 'Trading account is not set.');
+            return view('admin.history');
+        }
         $account = request()->input('account', $this->tradingAccount->account);
         $date = request()->input('date', date('Y-m-d'));
         $history = $this->atomicHub->fetchHistory($date, [$account]);
