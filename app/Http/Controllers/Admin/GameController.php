@@ -28,7 +28,7 @@ class GameController extends BaseController
 
         $earnings = AlienworldsMining::where('date', $date)
             ->whereIn('account', $accounts)
-            ->orderBy('updated_at', 'desc')
+            ->orderBy('total', 'desc')
             ->get();
 
         $total = 0;

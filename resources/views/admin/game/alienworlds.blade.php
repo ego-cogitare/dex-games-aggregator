@@ -9,7 +9,7 @@
 @section('content')
     <div class="box">
         <div class="box-body">
-            <table class="table table-bordered table-hover">
+            <table id="data-table" class="table table-bordered table-hover">
                 <thead>
                 <tr>
                     <th>#</th>
@@ -40,11 +40,14 @@
                     </tr>
                 @endforeach
                 <tr>
-                    <td colspan="2"><b>Total</b></td>
+                    <td><b>Total</b></td>
+                    <td>&nbsp;</td>
                     <td><b>{{$total}}</b></td>
-                    <td><b>{{$avg}}</b></td>
+                    <td><b>{{sprintf('%.6f', $avg)}}</b></td>
                     <td><b>{{$count}}</b></td>
-                    <td colspan="3">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
                     <td><b>{{$staked}}</b></td>
                 </tr>
                 </tbody>
