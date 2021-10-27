@@ -28,20 +28,26 @@ class GameController extends BaseController
 
         $earnings = AlienworldsMining::where('date', $date)
             ->whereIn('account', $accounts)
-            ->orderBy('total', 'desc')
+            ->orderBy('updated_at', 'desc')
             ->get();
 
         $total = 0;
         $count = 0;
+        $staked = 0;
         foreach ($earnings as $earning) {
             $total += $earning->total;
             $count += $earning->count;
+            $staked += (int)$earning->cpu_staked;
+            $earning->last_mine =  $earning->updated_at ?: $earning->created_at;
+            $earning->time_left = \Carbon\Carbon::createFromTimeString($earning->last_mine)->diffForHumans();
         }
 
         return view('admin.game.alienworlds', [
             'earnings' => $earnings,
             'total' => $total,
             'count' => $count,
+            'avg' => $total / $count,
+            'staked' => $staked,
         ]);
     }
 }

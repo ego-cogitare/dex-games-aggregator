@@ -16,25 +16,36 @@
                     <th>Account</th>
                     <th>Total</th>
                     <th>Avg</th>
-                    <th>Mines Count</th>
+                    <th>Mines</th>
+                    <th>Last Mine</th>
+                    <th>Time Left</th>
+                    <th>%, CPU</th>
+                    <th>Stake CPU, WAX</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach ($earnings as $item)
-                    <tr>
+                    <tr @if ($item['cpu_usage'] > 90)style="background: #fbf1f0" class="text-danger"@endif>
                         <td width="40">{{$loop->iteration}}</td>
                         <td>
-                            <a href="?account={{$item['account']}}">{{$item['account']}}</a>
+                            <a href="https://wax.bloks.io/account/{{$item['account']}}" target="_blank">{{$item['account']}}</a>
                         </td>
                         <td>{{$item['total']}}</td>
                         <td>{{$item['avg']}}</td>
                         <td>{{$item['count']}}</td>
+                        <td>{{$item['last_mine']}}</td>
+                        <td>{{$item['time_left']}}</td>
+                        <td>{{$item['cpu_usage']}}</td>
+                        <td>{{sprintf('%.2f', $item['cpu_staked'])}}</td>
                     </tr>
                 @endforeach
                 <tr>
                     <td colspan="2"><b>Total</b></td>
-                    <td colspan="2"><b>{{$total}}</b></td>
+                    <td><b>{{$total}}</b></td>
+                    <td><b>{{$avg}}</b></td>
                     <td><b>{{$count}}</b></td>
+                    <td colspan="3">&nbsp;</td>
+                    <td><b>{{$staked}}</b></td>
                 </tr>
                 </tbody>
             </table>
