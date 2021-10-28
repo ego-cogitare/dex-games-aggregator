@@ -40,7 +40,7 @@ class GameController extends BaseController
             $count += $earning->count;
             $staked += (int)$earning->cpu_staked;
             $earning->last_mine =  $earning->updated_at ?: $earning->created_at;
-            $date = \Carbon\Carbon::createFromTimeString($earning->last_mine)->addHours(3);
+            $date = \Carbon\Carbon::createFromTimeString($earning->last_mine);
             $earning->last_mine = $date->toDayDateTimeString();
             $earning->time_left = \Carbon\Carbon::createFromTimeString($date)->diffForHumans();
         }
