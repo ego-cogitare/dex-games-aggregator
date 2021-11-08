@@ -50,6 +50,8 @@ class AlienworldsStatistic extends AbstractCommand
                     'count' => $data['count'],
                     'date' => $date,
                     'updated_at' => Carbon::now(),
+                    'cpu_usage' => $accountInfo[$account->account]['cpuUsage'],
+                    'cpu_staked' => $accountInfo[$account->account]['cpuStaked'],
                     'last_mine_at' => is_null($lastMine) ? null : \Carbon\Carbon::createFromTimeString($lastMine),
                     'refund_cpu' => $accountInfo[$account->account]['refund']['cpu'] ?? null,
                     'refund_net' => $accountInfo[$account->account]['refund']['net'] ?? null,
