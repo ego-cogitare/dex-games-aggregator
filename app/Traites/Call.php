@@ -45,7 +45,7 @@ trait Call
             return $response;
         }
 
-        return json_decode($response);
+        return json_decode($response, true);
     }
 }
 

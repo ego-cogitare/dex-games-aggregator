@@ -180,6 +180,7 @@ return [
          * Custom providers
          */
         App\Providers\AtomicHubApiServiceProvider::class,
+        App\Providers\WaxApiServiceProvider::class,
     ],
 
     /*

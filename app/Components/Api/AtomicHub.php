@@ -4,7 +4,6 @@ namespace App\Components\Api;
 
 
 use App\Traites\Call;
-use stdClass;
 
 /**
  * Class AtomicHub
