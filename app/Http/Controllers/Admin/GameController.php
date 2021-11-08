@@ -39,10 +39,18 @@ class GameController extends BaseController
             $total += $earning->total;
             $count += $earning->count;
             $staked += (int)$earning->cpu_staked;
-            $earning->last_mine =  $earning->updated_at ?: $earning->created_at;
-            $date = \Carbon\Carbon::createFromTimeString($earning->last_mine);
-            $earning->last_mine = $date->addHour(2)->toDayDateTimeString();
-            $earning->time_left = \Carbon\Carbon::createFromTimeString($date->subHour(2))->diffForHumans();
+            if (is_null($earning->last_mine_at)) {
+                $earning->last_mine = '-';
+                $earning->time_left = '-';
+            } else {
+                $earning->last_mine = $earning->last_mine_at;
+                $date = \Carbon\Carbon::createFromTimeString($earning->last_mine);
+                $earning->last_mine = $date->addHour(2)->toDayDateTimeString();
+                $earning->time_left = \Carbon\Carbon::createFromTimeString($date->subHour(2))->diffForHumans();
+            }
+            if (!is_null($earning->refund_ts)) {
+                $earning->refund_ts = \Carbon\Carbon::createFromTimeString($earning->refund_ts)->addDays(3)->toDayDateTimeString();
+            }
         }
 
         return view('admin.game.alienworlds', [

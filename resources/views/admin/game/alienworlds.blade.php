@@ -40,7 +40,7 @@
                         <td>{{$item['last_mine']}}</td>
                         <td>{{$item['time_left']}}</td>
                         <td>{{$item['cpu_usage']}}</td>
-                        <td>{{sprintf('%.2f', $item['cpu_staked'])}}</td>
+                        <td>{{sprintf('%.2f', $item['cpu_staked'])}} @if ($item['refund_cpu']) <span class="text-info text-bold">↑{{sprintf('%.2f', $item['refund_cpu'])}}</span> at {{$item['refund_ts']}}@endif</td>
                     </tr>
                 @endforeach
                 </tbody>
