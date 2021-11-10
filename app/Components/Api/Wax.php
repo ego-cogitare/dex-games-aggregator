@@ -103,12 +103,12 @@ class WAX
             $result[$account] = [
                 'cpuStaked' => $response['cpu_weight'] / 1e8,
                 'cpuUsage' =>  $response['cpu_limit']['used'] / $response['cpu_limit']['max'] * 100,
-                'waxBalance' =>  (int)$response['core_liquid_balance'],
+                'waxBalance' =>  (float)$response['core_liquid_balance'],
             ];
             if (!is_null($response['refund_request'])) {
                 $result[$account]['refund'] = [
-                    'cpu' => (int)$response['refund_request']['cpu_amount'],
-                    'net' => (int)$response['refund_request']['net_amount'],
+                    'cpu' => (float)$response['refund_request']['cpu_amount'],
+                    'net' => (float)$response['refund_request']['net_amount'],
                     'timestamp' => $response['refund_request']['request_time'],
                 ];
             }

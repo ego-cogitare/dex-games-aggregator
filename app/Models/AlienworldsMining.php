@@ -21,6 +21,7 @@ class AlienworldsMining extends Model
         'count',
         'date',
         'updated_at',
+        'wax_balance',
         'last_mine_at',
         'refund_cpu',
         'refund_net',

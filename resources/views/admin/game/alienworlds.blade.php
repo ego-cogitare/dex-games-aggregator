@@ -22,6 +22,7 @@
                     <th>Time Left</th>
                     <th>%, CPU</th>
                     <th>Stake CPU, WAX</th>
+                    <th>WAX balance</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -41,6 +42,7 @@
                         <td>{{$item['time_left']}}</td>
                         <td>{{$item['cpu_usage']}}</td>
                         <td>{{sprintf('%.2f', $item['cpu_staked'])}} @if ($item['refund_cpu']) <span class="text-info text-bold">↑{{sprintf('%.2f', $item['refund_cpu'])}}</span> at {{$item['refund_ts']}}@endif</td>
+                        <td>{{sprintf('%.2f', $item['wax_balance'])}}</td>
                     </tr>
                 @endforeach
                 </tbody>
@@ -50,12 +52,13 @@
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td><b>{{$total}}</b></td>
-                        <td><b>{{sprintf('%.6f', $avg)}}</b></td>
+                        <td><b>{{sprintf('%.5f', $avg)}}</b></td>
                         <td><b>{{$count}}</b></td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
-                        <td><b>{{$staked}}</b></td>
+                        <td><b>{{sprintf('%.2f', $staked)}}</b></td>
+                        <td><b>{{sprintf('%.2f', $waxBalance)}}</b></td>
                     </tr>
                 </tfoot>
             </table>
