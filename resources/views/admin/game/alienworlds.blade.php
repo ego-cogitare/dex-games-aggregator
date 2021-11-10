@@ -27,7 +27,7 @@
                 </thead>
                 <tbody>
                 @foreach ($earnings as $item)
-                    <tr @if ($item['cpu_usage'] > 90)style="background: #fbf1f0" class="text-danger"@endif>
+                    <tr @if ($item['cpu_usage'] > 90)style="background: #fbf1f0"@endif>
                         <td width="40">{{$loop->iteration}}</td>
                         <td>
                             <a href="https://wax.bloks.io/account/{{$item['account']}}" target="_blank">{{$item['account']}}</a>
@@ -41,8 +41,8 @@
                         <td>{{$item['last_mine']}}</td>
                         <td>{{$item['time_left']}}</td>
                         <td>{{$item['cpu_usage']}}</td>
-                        <td>{{sprintf('%.2f', $item['cpu_staked'])}} @if ($item['refund_cpu']) <span class="text-info text-bold">↑{{sprintf('%.2f', $item['refund_cpu'])}}</span> at {{$item['refund_ts']}}@endif</td>
-                        <td>{{sprintf('%.2f', $item['wax_balance'])}}</td>
+                        <td>{{sprintf('%.2f', $item['cpu_staked'])}}</td>
+                        <td>{{sprintf('%.2f', $item['wax_balance'])}} @if ($item['refund_cpu']) <span style="color: #a2a2a2;">+{{sprintf('%.2f', $item['refund_cpu'])}} at {{$item['refund_ts']}}</span>@endif</td>
                     </tr>
                 @endforeach
                 </tbody>
@@ -58,7 +58,7 @@
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td><b>{{sprintf('%.2f', $staked)}}</b></td>
-                        <td><b>{{sprintf('%.2f', $waxBalance)}}</b></td>
+                        <td><b>{{sprintf('%.2f', $waxBalance)}} @if ($cpuRefund > 0) <span style="color: #a2a2a2;">+{{sprintf('%.2f', $cpuRefund)}}</span>@endif</b></td>
                     </tr>
                 </tfoot>
             </table>

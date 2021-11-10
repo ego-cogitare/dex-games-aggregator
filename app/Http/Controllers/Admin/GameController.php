@@ -36,11 +36,13 @@ class GameController extends BaseController
         $count = 0;
         $staked = 0;
         $waxBalance = 0;
+        $cpuRefund = 0;
         foreach ($earnings as $earning) {
             $total += $earning->total;
             $count += $earning->count;
             $staked += (float)$earning->cpu_staked;
             $waxBalance += (float)$earning->wax_balance;
+            $cpuRefund += (float)$earning->refund_cpu;
             if (is_null($earning->last_mine_at)) {
                 $earning->last_mine = '-';
                 $earning->time_left = '-';
@@ -62,6 +64,7 @@ class GameController extends BaseController
             'avg' => $total / $count,
             'staked' => $staked,
             'waxBalance' => $waxBalance,
+            'cpuRefund' => $cpuRefund,
         ]);
     }
 
