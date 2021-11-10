@@ -49,11 +49,11 @@ class GameController extends BaseController
             } else {
                 $earning->last_mine = $earning->last_mine_at;
                 $date = \Carbon\Carbon::createFromTimeString($earning->last_mine);
-                $earning->last_mine = $date->addHour(2)->toDayDateTimeString();
+                $earning->last_mine = $date->addHour(2)->format('M j H:i');
                 $earning->time_left = \Carbon\Carbon::createFromTimeString($date->subHour(2))->diffForHumans();
             }
             if (!is_null($earning->refund_ts)) {
-                $earning->refund_ts = \Carbon\Carbon::createFromTimeString($earning->refund_ts)->addDays(3)->toDayDateTimeString();
+                $earning->refund_ts = \Carbon\Carbon::createFromTimeString($earning->refund_ts)->addDays(3)->format('M j H:i');
             }
         }
 
