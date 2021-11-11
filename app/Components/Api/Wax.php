@@ -109,7 +109,7 @@ class WAX
                 $result[$account]['refund'] = [
                     'cpu' => (float)$response['refund_request']['cpu_amount'] ?? 0,
                     'net' => (float)$response['refund_request']['net_amount'] ?? 0,
-                    'timestamp' => $response['refund_request']['request_time'],
+                    'timestamp' => $response['refund_request']['request_time'] ?? 0,
                 ];
             }
         }
