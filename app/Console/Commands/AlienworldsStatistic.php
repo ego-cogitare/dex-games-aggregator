@@ -37,10 +37,13 @@ class AlienworldsStatistic extends AbstractCommand
                 /** Fetch mine history */
                 $mines = $wax->earnings([$account->account], $date, $date);
 
+                if (empty($mines[$account->account])) {
+                    continue;
+                }
+                $data = $mines[$account->account];
+
                 /** Fetch account info */
                 $accountInfo = $wax->accountsInfo([$account->account]);
-
-                $data = $mines[$account->account];
                 $lastMine = $data['mines'][0]['timestamp'] ?? null;
 
                 $dbData = [
