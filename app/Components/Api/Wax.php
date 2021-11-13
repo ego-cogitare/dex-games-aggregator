@@ -4,6 +4,7 @@ namespace App\Components\Api;
 
 
 use App\Traites\Call;
+use Log;
 
 /**
  * Class WAX
@@ -60,6 +61,7 @@ class WAX
                 'before' => sprintf('%sT23:59:59.000Z', $dateTo),
             ]);
             if (empty($response['actions'])) {
+                Log::error(json_encode($response));
                 continue;
             }
             $mines = [];
