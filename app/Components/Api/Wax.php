@@ -60,7 +60,7 @@ class WAX
                 'after' => sprintf('%sT00:00:00.000Z', $dateFrom),
                 'before' => sprintf('%sT23:59:59.000Z', $dateTo),
             ]);
-            if (empty($response['actions'])) {
+            if (!isset($response['actions'])) {
                 Log::error(json_encode($response));
                 continue;
             }

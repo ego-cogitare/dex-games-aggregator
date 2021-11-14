@@ -7,7 +7,7 @@ use App\Components\Api\WAX;
 use App\Models\AlienworldsMining;
 use App\Models\Accounts;
 use Carbon\Carbon;
-use Exception;
+use Log;
 
 /**
  * Class TestCommand
@@ -32,6 +32,7 @@ class AlienworldsStatistic extends AbstractCommand
         while (true) {
             $date = $this->option('date') ?: date('Y-m-d');
             foreach ($accounts as $account) {
+                $this->info($account->account);
                 $item = AlienworldsMining::whereRaw('date = ? AND account = ?', [$date, $account->account]);
 
                 /** Fetch mine history */
