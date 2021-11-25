@@ -94,7 +94,7 @@ class GameController extends BaseController
                 ]),
             ],
         ]);
-        $response = file_get_contents('https://aw-guard.yeomen.ai/v1/chain/get_table_rows', false, $context);
+        $response = file_get_contents('https://wax.greymass.com/v1/chain/get_table_rows', false, $context);
         $data = json_decode($response, true);
         $landId = $data['rows'][0]['current_land'] ?? null;
 
