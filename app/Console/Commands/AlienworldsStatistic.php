@@ -6,6 +6,7 @@ namespace App\Console\Commands;
 use App\Components\Api\WAX;
 use App\Models\AlienworldsMining;
 use App\Models\Accounts;
+use App\Models\AlienworldsMiningHistory;
 use Carbon\Carbon;
 use Log;
 
@@ -57,18 +58,35 @@ class AlienworldsStatistic extends AbstractCommand
                     'wax_balance' => $accountInfo[$account->account]['waxBalance'],
                     'cpu_usage' => $accountInfo[$account->account]['cpuUsage'],
                     'cpu_staked' => $accountInfo[$account->account]['cpuStaked'],
-                    'last_mine_at' => is_null($lastMine) ? null : \Carbon\Carbon::createFromTimeString($lastMine),
+                    'last_mine_at' => is_null($lastMine) ? null : Carbon::createFromTimeString($lastMine),
                     'refund_cpu' => $accountInfo[$account->account]['refund']['cpu'] ?? null,
                     'refund_net' => $accountInfo[$account->account]['refund']['net'] ?? null,
                     'refund_ts' => $accountInfo[$account->account]['refund']['timestamp'] ?? null,
                 ];
-
                 if ($item->count() > 0) {
                     $this->info('update existing record for ' . $account->account);
                     $item->update($dbData);
                 } else {
                     $this->info('add new record for ' . $account->account);
                     AlienworldsMining::create($dbData);
+                }
+
+                if (!empty($data['mines'])) {
+                    foreach ($data['mines'] as $mine) {
+                        $entity = [
+                            'account' => $account->account,
+                            'timestamp' => Carbon::createFromTimeString($mine['timestamp']),
+                            'amount' => $mine['amount'],
+                        ];
+
+                        /** @var AlienworldsMiningHistory $item */
+                        $item = AlienworldsMiningHistory::whereRaw('account = ? AND timestamp = ?', [$account->account, $entity['timestamp']]);
+
+                        /** Update existing or create new record */
+                        if ($item->count() === 0) {
+                            AlienworldsMiningHistory::create($entity);
+                        }
+                    }
                 }
 
                 $this->sleep($delay);
