@@ -61,7 +61,7 @@ class GameController extends BaseController
             'earnings' => $earnings,
             'total' => $total,
             'count' => $count,
-            'avg' => $total / $count,
+            'avg' => $count > 0 ? $total / $count : 0,
             'staked' => $staked,
             'waxBalance' => $waxBalance,
             'cpuRefund' => $cpuRefund,
