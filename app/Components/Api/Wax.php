@@ -51,7 +51,7 @@ class WAX
     {
         $result = [];
         foreach ($accounts as $account) {
-            $response = $this->waxBlock->call('v2/history/get_actions', [], [
+            /*$response = $this->waxBlock->call('v2/history/get_actions', [], [
                 'account' => $account,
                 'filter' => 'alien.worlds:*',
                 'skip' => $skip,
@@ -59,7 +59,15 @@ class WAX
                 'sort' => $sort,
                 'after' => sprintf('%sT00:00:00.000Z', $dateFrom),
                 'before' => sprintf('%sT23:59:59.000Z', $dateTo),
-            ]);
+            ]);*/
+
+            $response = $this->greyMass->call('v1/history/get_actions', [], [], 'POST', json_encode([
+                    'account_name' => $account,
+                    'offset' => -100,
+                    'pos' => -1,
+                ]),
+                ['Content-Type: application/json']
+            );
             if (!isset($response['actions'])) {
                 Log::error(json_encode($response));
                 continue;
@@ -68,16 +76,25 @@ class WAX
             $total = 0;
             $count = 0;
             foreach ($response['actions'] as $action) {
-                if ($action['act']['data']['to'] !== $account || $action['act']['data']['from'] !== 'm.federation') {
+                if (empty($action['action_trace']['act']['data']['to'])
+                    || $action['action_trace']['act']['data']['to'] !== $account
+                    || $action['action_trace']['act']['data']['from'] !== 'm.federation'
+                    || $action['action_trace']['block_time'] < $dateFrom
+                    //|| $action['action_trace']['block_time'] > $dateFrom
+                ) {
                     continue;
                 }
+                $amount = (float)$action['action_trace']['act']['data']['quantity'];
                 $mines[] = [
-                    'timestamp' => $action['timestamp'],
-                    'amount' => $action['act']['data']['amount'],
+                    'timestamp' => $action['action_trace']['block_time'],
+                    'amount' => $amount,
                 ];
-                $total += $action['act']['data']['amount'];
+                $total += $amount;
                 $count += 1;
             }
+            usort($mines, function ($a, $b) {
+                return $a['timestamp'] > $b['timestamp'] ? -1 : 1;
+            });
 
             $result[$account] = [
                 'total' => $total,
