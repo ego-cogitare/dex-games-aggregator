@@ -51,6 +51,59 @@ class WAX
     {
         $result = [];
         foreach ($accounts as $account) {
+            $response = $this->waxBlock->call('v2/history/get_actions', [], [
+                'account' => $account,
+                'filter' => 'alien.worlds:*',
+                'skip' => $skip,
+                'limit' => $limit,
+                'sort' => $sort,
+                'after' => sprintf('%sT00:00:00.000Z', $dateFrom),
+                'before' => sprintf('%sT23:59:59.000Z', $dateTo),
+            ]);
+            if (!isset($response['actions'])) {
+                Log::error(json_encode($response));
+                continue;
+            }
+            $mines = [];
+            $total = 0;
+            $count = 0;
+            foreach ($response['actions'] as $action) {
+                if ($action['act']['data']['to'] !== $account || $action['act']['data']['from'] !== 'm.federation') {
+                    continue;
+                }
+                $mines[] = [
+                    'timestamp' => $action['timestamp'],
+                    'amount' => $action['act']['data']['amount'],
+                ];
+                $total += $action['act']['data']['amount'];
+                $count += 1;
+            }
+
+            $result[$account] = [
+                'total' => $total,
+                'currency' => 'TLM',
+                'avg' => $count > 0 ? $total / $count : null,
+                'count' => $count,
+                'mines' => $mines,
+            ];
+        }
+
+        return $result;
+    }
+
+    /**
+     * @param array $accounts
+     * @param string $dateFrom
+     * @param string $dateTo
+     * @param int $limit
+     * @param int $skip
+     * @param string $sort
+     * @return array
+     */
+    public function _earnings(array $accounts = [], string $dateFrom = '', string $dateTo = '', int $limit = 200, int $skip = 0, string $sort = 'desc'): array
+    {
+        $result = [];
+        foreach ($accounts as $account) {
             /*$response = $this->waxBlock->call('v2/history/get_actions', [], [
                 'account' => $account,
                 'filter' => 'alien.worlds:*',
