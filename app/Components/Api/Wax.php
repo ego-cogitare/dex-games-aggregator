@@ -104,16 +104,6 @@ class WAX
     {
         $result = [];
         foreach ($accounts as $account) {
-            /*$response = $this->waxBlock->call('v2/history/get_actions', [], [
-                'account' => $account,
-                'filter' => 'alien.worlds:*',
-                'skip' => $skip,
-                'limit' => $limit,
-                'sort' => $sort,
-                'after' => sprintf('%sT00:00:00.000Z', $dateFrom),
-                'before' => sprintf('%sT23:59:59.000Z', $dateTo),
-            ]);*/
-
             $response = $this->greyMass->call('v1/history/get_actions', [], [], 'POST', json_encode([
                     'account_name' => $account,
                     'offset' => -100,
